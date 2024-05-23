@@ -9,7 +9,7 @@
         }
 
         .frame-container {
-            width: 100%;
+            width: 50%;
             height: 100vh;
             float: left;
         }
@@ -36,6 +36,11 @@
         flex: 1;
         border: none;
         }
+
+        h1{
+            color: red;
+            font-size: 30pt;
+        }
     </style>
 </head>
 <body>
@@ -46,10 +51,14 @@
         </div>
     </div> -->
     <div class="frame-container">
+        <H1>TODOS</H1>
         <iframe class="frame" src="https://prtg.noc.faster.com.br/api/table.json?content=sensors&username=callcenter_ncc&password=C0ntr0le@ncc&output=csvtable"></iframe>
     </div>
-    <!-- <div class="frame-container">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeZnV8sZ1sHh5L2s5jA6wvCq8o913uZXhY7DK7DZSkL4PfAOw/viewform?pli=1&pli=1"></iframe>
-    </div> -->
+
+
+    <div class="frame-container">
+        <H1>PARADOS</H1>
+        <iframe src="https://prtg.noc.faster.com.br/api/table.json?content=probes&username=callcenter_ncc&password=C0ntr0le@ncc&filter_status=13&output=csvtable"></iframe>
+    </div>
 </body>
 </html>
